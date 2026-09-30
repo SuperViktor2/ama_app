@@ -11,6 +11,9 @@ $veza->spojiDB();
 require 'session.class.php';
 Sesija::kreirajSesiju();
 
+//test
+
+
 $greska = array();
 
 if (isset($_POST['submit'])) {
