@@ -1,0 +1,168 @@
+.obrazac {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.obrazac a {
+    width: 100%;
+}
+
+.obrazac input {
+    width: 100%;
+}
+
+.obrazac form {
+    padding: 20px;
+    border: 2px solid #33C3F0;
+}
+
+.greska {
+    color: #d32f2f;
+    margin-bottom: 15px;
+}
+
+.uspjeh {
+    color: #33C3F0;
+    margin-bottom: 15px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    min-height: 30px;
+    background-color: #33C3F0;
+    align-items: center;
+    min-width: 100%;
+    color: white;
+}
+
+.nav {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.nav li {
+    width: 150px;
+    height: 50px;
+    margin: 0;
+}
+
+.nav li a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav li a:hover {
+    background-color: #33C3F0;
+    color: white;
+}
+
+.poruka {
+   color: #33C3F0;
+}
+
+.prazno {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 30%;
+}
+
+
+#tablica {
+    overflow-x: auto;
+    display: block;
+}
+
+
+.content {
+    min-height: 100vh;
+}
+
+
+.modal-komentari {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+
+.modal-sadrzaj {
+    position: relative;
+    background-color: white;
+    width: 500px;
+    max-width: 80%;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+.modal-sadrzaj h4 {
+    margin-top: 0;
+    color: #33C3F0;
+}
+
+
+#tekstKomentara {
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+}
+
+
+.zatvori-komentare {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    border: none;
+    background: none;
+    font-size: 28px;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+
+
+.prikazi-komentare {
+    cursor: pointer;
+}
+
+
+.nema-komentara {
+    color: #aaa;
+    cursor: default;
+}
+
+.crvena-zastavica td {
+    color: red;
+}
+
+.container {
+    max-width: 1400px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.kod {
+    color: #33C3F0;
+}
