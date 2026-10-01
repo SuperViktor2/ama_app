@@ -10,14 +10,13 @@ class Baza {
     const lozinka = $config['db_user_pass'];
     const baza = "amastudio_ama_db";
     */
-    /*
+    
 
     const server = "localhost";
     const korisnik = "root";
     const lozinka = "";
     const baza = "Ama_DB";
 
-*/
 
 
     private $veza = null;
@@ -25,13 +24,16 @@ class Baza {
 
     function spojiDB() {
         global $config;
-
+/*
         $this->veza = new mysqli(
             $config['db_host'],
             $config['db_username'],
             $config['db_user_pass'],
             $config['db_name']
         );
+*/
+
+        $this->veza = new mysqli(self::server, self::korisnik, self::lozinka, self::baza);
 
         if ($this->veza->connect_errno) {
             echo "Neuspješno spajanje na bazu: " . $this->veza->connect_errno . ", " .
