@@ -92,6 +92,8 @@ if (isset($_POST['submit'])) {
         <title>Ama studio</title>
         <meta charset="utf-8">
         <meta name="author" content="Viktor Goleš">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
         <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
 

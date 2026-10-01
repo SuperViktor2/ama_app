@@ -173,6 +173,9 @@ if (isset($_POST['spremi'])) {
 
     <meta name="author" content="Viktor Goleš">
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
     <link
         href="//fonts.googleapis.com/css?family=Raleway:400,300,600"
         rel="stylesheet"
@@ -208,19 +211,19 @@ if (isset($_POST['spremi'])) {
 <body>
 
 
-<header>
+    <header>
 
-    <ul class="nav">
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-ikona">Meni</label>
 
-        <li>
-            <a href="main.php">
-                Početna stranica
-            </a>
-        </li>
-
-    </ul>
-
-</header>
+        <ul class = "nav">
+            <li><a href='logout.php'>Odjava</a></li>
+            <li><a href='main.php'>Početna stranica</a></li>
+            <li><a href='dodaj_klijenta.php'>Dodaj klijenta</a></li>
+            <li><a href='dodaj_termin.php'>Dodaj termin</a></li>
+           <li><a href='prosli_termini.php'>Moji prošli termini</a></li>
+        </ul>
+    </header>
 
 
 <div class="container">

@@ -24,6 +24,8 @@
             <title>Ama studio</title>
             <meta charset="utf-8">
             <meta name="author" content="Viktor Goleš">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
             <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
 
@@ -49,8 +51,16 @@
         </head>
         <body>
             <header>
+
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="menu-ikona">Meni</label>
+
                 <ul class = "nav">
+                    <li><a href='logout.php'>Odjava</a></li>
                     <li><a href='main.php'>Početna stranica</a></li>
+                    <li><a href='popis_klijenata.php'>Klijenti</a></li>
+                    <li><a href='dodaj_klijenta.php'>Dodaj klijenta</a></li>
+                    <li><a href='dodaj_termin.php'>Dodaj termin</a></li>
                 </ul>
             </header>
             <div class = "container">

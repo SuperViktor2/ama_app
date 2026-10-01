@@ -20,6 +20,8 @@ Sesija::kreirajSesiju();
         <title>Ama studio</title>
         <meta charset="utf-8">
         <meta name="author" content="Viktor Goleš">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
         <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
 
@@ -244,6 +246,10 @@ $admin = $rez->fetch_assoc();
 ?>
 <body>
     <header>
+
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-ikona"><img src="icons/app.png"></label>
+
         <ul class = "nav">
             <li><a href='logout.php'>Odjava</a></li>
             <li><a href='popis_klijenata.php'>Klijenti</a></li>

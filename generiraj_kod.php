@@ -82,6 +82,8 @@ if (isset($_POST['generiraj'])) {
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Generiraj kod</title>
 
     <link rel="stylesheet" href="css/normalize.css">
@@ -91,11 +93,20 @@ if (isset($_POST['generiraj'])) {
 
 <body>
 
-<header>
-    <ul class = "nav">
-        <li><a href='main.php'>Početna stranica</a></li>
-    </ul>
-</header>
+    <header>
+
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-ikona">Meni</label>
+
+        <ul class = "nav">
+            <li><a href='logout.php'>Odjava</a></li>
+            <li><a href="main.php">Početna stranica</a></li>
+            <li><a href='popis_klijenata.php'>Klijenti</a></li>
+            <li><a href='dodaj_klijenta.php'>Dodaj klijenta</a></li>
+            <li><a href='dodaj_termin.php'>Dodaj termin</a></li>
+           <li><a href='prosli_termini.php'>Moji prošli termini</a></li>
+        </ul>
+    </header>
 
 <div class="container">
 

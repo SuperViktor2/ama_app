@@ -146,6 +146,7 @@ if (isset($_POST['submit'])) {
         <title>Ama studio - Dodavanje termina</title>
         <meta charset="utf-8">
         <meta name="author" content="Viktor Goleš">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
 
@@ -158,15 +159,19 @@ if (isset($_POST['submit'])) {
 <body>
 
 
-<header>
-    <ul class = "nav">
-        <li>
-            <a href="main.php">
-                Naslovna stranica
-            </a>
-        </li>
-</ul>
-</header>
+    <header>
+
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-ikona">Meni</label>
+
+        <ul class = "nav">
+            <li><a href='logout.php'>Odjava</a></li>
+            <li><a href='main.php'>Početna stranica</a></li>
+            <li><a href='popis_klijenata.php'>Klijenti</a></li>
+            <li><a href='dodaj_klijenta.php'>Dodaj Klijenta</a></li>
+           <li><a href='prosli_termini.php'>Moji prošli termini</a></li>
+        </ul>
+    </header>
 
 
 <div class="container">
@@ -241,7 +246,7 @@ if (isset($_POST['submit'])) {
                 <div class="usluga-red">
                     <select
                         name="usluga[]"
-                        class="odabir-usluge"
+                        class="u-full-width"
                     >
 
                         <option value="">
