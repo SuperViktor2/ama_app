@@ -96,7 +96,8 @@ if (isset($_POST['generiraj'])) {
     <header>
 
         <input type="checkbox" id="menu-toggle">
-        <label for="menu-toggle" class="menu-ikona">Meni</label>
+        <label for="menu-toggle" class="menu-ikona"><img src="icons/app.png"></label>
+
 
         <ul class = "nav">
             <li><a href='logout.php'>Odjava</a></li>
